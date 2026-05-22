@@ -1,0 +1,49 @@
+@import 'reset.css';
+@import 'variable.css';
+@import 'typo.css';
+
+body{
+    min-height: 100vh;
+}
+footer{
+    position: relative;
+    bottom: 0;
+}
+main{
+    margin: var(--spacing_500);
+}
+.card{
+    max-height: max-content;
+    padding: var(--spacing_400);
+    box-shadow: 40px 60px 50px -47px 48556A 24.74%;
+    border-radius: 8px;
+}
+.card--purple{
+    background-color: var(--purple_500);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin-bottom: var(--spacing_200);
+}
+img{
+    height: 28px;
+    width: 28px;
+}
+.img__border--purple {
+    border-radius: 50%;
+    border: 2px solid var(--purple_300);
+}
+.name,
+.testimonies{
+    color: #fff;
+}
+.type,
+.citation{
+    color: var(--purple_50);
+}
+.citation,
+.testimonies{
+    margin-top: var(--spacing_200);
+}
