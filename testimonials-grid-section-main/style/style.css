@@ -18,9 +18,13 @@ main{
     padding: var(--spacing_400);
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 24.74);
     border-radius: 8px;
+    margin-bottom: var(--spacing_400);
 }
 .card--purple{
     background-color: var(--purple_500);
+}
+.card--grey{
+    background-color: var(--grey_500);
 }
 header{
     display: flex;
@@ -31,20 +35,92 @@ header{
 img{
     height: 28px;
     width: 28px;
+    border-radius: 50%;
 }
 .img__border--purple {
-    border-radius: 50%;
     border: 2px solid var(--purple_300);
 }
-.name,
-.testimonies{
+
+.name--white,
+.testimonies--white,
+.type--white{
     color: #fff;
 }
-.type,
-.citation{
+.type--purple,
+.citation--purple{
     color: var(--purple_50);
 }
 .citation,
 .testimonies{
     margin-top: var(--spacing_200);
+}
+.type--grey{
+    color: #A3AAB4;
+}
+.citation--grey100{
+    color: var(--grey_100);
+}
+.card--white{
+    background-color: #fff;
+}
+.name--grey500,
+.testimonies--grey500,
+.name--grey500{
+    color: var(--grey_500);
+}
+.type--grey400,
+.citation--grey400{
+    color: var(--grey_400)
+}
+.card--darkblue{
+    background-color: var(--bg_color-dark_blue);
+}
+.testimonies--grey200{
+    color: var(--grey_200);
+}
+@media(min-width: 768px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 32px;
+    }
+    .card--purple{
+        grid-area: 1 / 1 / -1 / -1;
+    }
+    .card--grey{
+        grid-area: 2/ 1 / 3 / 5;
+    }
+    .card--little{
+        grid-area : 2 / 5 / 3 / -1;
+    }
+    .card--darkblue{
+        grid-area: 3 / 1 / 4 / -1;
+    }
+    .card--big{
+        grid-area: 4 / 1 / -1 / -1;
+    }
+}
+@media(min-width: 1440px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 32px;
+    }
+    .card--purple{
+        grid-area: 1 / 1 / 3 / 7;
+    }
+    .card--grey{
+        grid-area: 1 / 7 / 3 / 10;
+    }
+    .card--big{
+        grid-area : 1  / 10 / -1 / -1;
+    }
+    .card--darkblue{
+        grid-area: 3 / 4 / -1 / 10;
+    }
+    .card--little{
+        grid-area: 3 / 1 / -1 / 4;
+    }
 }
