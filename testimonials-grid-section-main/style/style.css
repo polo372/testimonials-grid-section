@@ -14,7 +14,7 @@ main{
     margin: var(--spacing_500);
 }
 .card{
-    max-height: max-content;
+    /* max-height: max-content; */
     padding: var(--spacing_400);
     box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 24.74);
     border-radius: 8px;
@@ -28,14 +28,15 @@ main{
 }
 header{
     display: flex;
-    justify-content: space-between;
-    width: 45%;
+    justify-content: flex-start;
+    /* width: 45%; */
     margin-bottom: var(--spacing_200);
 }
-img{
+header img{
     height: 28px;
     width: 28px;
     border-radius: 50%;
+    margin-right: var(--spacing_200);
 }
 .img__border--purple {
     border: 2px solid var(--purple_300);
@@ -78,6 +79,9 @@ img{
 .testimonies--grey200{
     color: var(--grey_200);
 }
+.quotation{
+    display: none;
+}
 @media(min-width: 768px) {
     main{
         display: grid;
@@ -85,14 +89,26 @@ img{
         grid-template-rows: repeat(4, 1fr);
         gap: 32px;
     }
-    .card--purple{
-        grid-area: 1 / 1 / -1 / -1;
+    main .card{
+        margin-bottom: 0;
     }
+    .card--purple{
+        grid-area: 1 / 1 / 2 / -1;
+        width: 100%;
+        height: 270px;
+        position: relative;
+        z-index: 0;
+        /* margin-bottom: 0; */
+        }
     .card--grey{
         grid-area: 2/ 1 / 3 / 5;
+        /* width: 45%; */
+        /* height: 100%; */
     }
     .card--little{
         grid-area : 2 / 5 / 3 / -1;
+        /* width: 45%; */
+        /* height: 246px; */
     }
     .card--darkblue{
         grid-area: 3 / 1 / 4 / -1;
@@ -100,8 +116,26 @@ img{
     .card--big{
         grid-area: 4 / 1 / -1 / -1;
     }
+    .quotation{
+        display: block;
+        width: 104px;
+        height: 102px;
+        position: absolute;
+        top: 0px;
+        right: 190px;
+        z-index: 10;
+    }
+    .testimonies{
+        position: relative;
+        z-index: 100;
+    }
 }
 @media(min-width: 1440px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     main{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
