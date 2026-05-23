@@ -40,7 +40,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
-
+https://github.com/polo372
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
@@ -107,7 +107,7 @@ Describe how you used AI tools (if any) during this project. This helps demonstr
 **Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
 
 ## Author
-
+https://github.com/polo372
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
