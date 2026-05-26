@@ -16,7 +16,7 @@ main{
 .card{
     /* max-height: max-content; */
     padding: var(--spacing_400);
-    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 24);
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.2474);
     border-radius: 8px;
     margin-bottom: var(--spacing_400);
 }
@@ -65,8 +65,7 @@ header{
     background-color: #fff;
 }
 .name--grey500,
-.testimonies--grey500,
-.name--grey500{
+.testimonies--grey500{
     color: var(--grey_500);
 }
 .type--grey400,
